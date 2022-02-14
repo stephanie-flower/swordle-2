@@ -1,0 +1,82 @@
+body {
+  background-image: url('../public/background.svg');
+}
+
+.home {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home img {
+  margin-top: 10%;
+  width: 60%;
+}
+
+.menu {
+  font-size: 3rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #353535;
+}
+
+.cell {
+  background-color: #583C36;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  background-color:#48261D;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  padding: 10px;
+  position: absolute;
+  left: 9%;
+  top: 10%;
+}
+
+.enemyGrid {
+  background-color:#48261D;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  padding: 10px;
+  position: absolute;
+  right: 9%;
+  bottom: 20%;
+}
+
+.vs {
+  display: flex;
+  font-family: 'Source Code Pro', monospace;
+  flex-direction: column;
+  font-size: 3rem;
+  align-items: center;
+  position: absolute;
+  left: 44%;
+  margin-left: -50px;
+  top: 44%;
+  margin-top: -50px;
+}
+
+.vs img{
+  width: 30%;
+  height: auto;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1256px" height="314px" viewBox="0 0 1256 314" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="10" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.2784314 0 0 0 0 0.2784314 0 0 0 0 0.2784314 0 0 0 0.49803922 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="-10" dy="0" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.2784314 0 0 0 0 0.2784314 0 0 0 0 0.2784314 0 0 0 0.49803922 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+  </defs>
+  <g id="Group-8">
+    <g filter="url(#filter_1)">
+      <g id="Group" transform="translate(142.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle" fill="#BEBEBE" fill-rule="evenodd" stroke="none" />
+        <g id="S" transform="translate(15 15)">
+          <path d="M45.48 79.7614Q38.856 79.7614 33.192 77.2654Q27.528 74.7694 23.4 70.4494L28.2 64.8814Q31.56 68.4334 36.12 70.5934Q40.68 72.7534 45.576 72.7534Q51.816 72.7534 55.272 69.9214Q58.728 67.0894 58.728 62.4814Q58.728 60.0814 57.912 58.4014Q57.096 56.7214 55.704 55.5214Q54.312 54.3214 52.392 53.3614Q50.472 52.4014 48.264 51.3454L39.24 47.4094Q37.032 46.4494 34.728 45.1054Q32.424 43.7614 30.6 41.8414Q28.776 39.9214 27.624 37.2814Q26.472 34.6414 26.472 31.1854Q26.472 27.6334 27.96 24.5614Q29.448 21.4894 32.088 19.2334Q34.728 16.9774 38.328 15.7294Q41.928 14.4814 46.248 14.4814Q51.912 14.4814 56.712 16.6414Q61.512 18.8014 64.872 22.2574L60.552 27.4414Q57.672 24.6574 54.168 23.0734Q50.664 21.4894 46.248 21.4894Q40.968 21.4894 37.752 23.9374Q34.536 26.3854 34.536 30.7054Q34.536 33.0094 35.448 34.5934Q36.36 36.1774 37.896 37.3774Q39.432 38.5774 41.256 39.4894Q43.08 40.4014 45 41.1694L53.928 45.0094Q56.616 46.1614 59.016 47.6494Q61.416 49.1374 63.144 51.1054Q64.872 53.0734 65.88 55.7134Q66.888 58.3534 66.888 61.8094Q66.888 65.5534 65.4 68.8174Q63.912 72.0814 61.128 74.5294Q58.344 76.9774 54.408 78.3694Q50.472 79.7614 45.48 79.7614Z" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Group-2" transform="translate(284.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-2" fill="#BEBEBE" fill-rule="evenodd" stroke="none" />
+        <g id="W" transform="translate(15 15)">
+          <path d="M22.824 78.6094L9.48 15.6334L17.736 15.6334L24.36 49.9054Q25.224 55.0894 26.184 60.0814Q27.144 65.0734 28.008 70.2574L28.392 70.2574Q29.448 65.0734 30.6 60.0334Q31.752 54.9934 32.808 49.9054L41.544 15.6334L48.84 15.6334L57.576 49.9054Q58.728 54.8974 59.88 59.9854Q61.032 65.0734 62.184 70.2574L62.568 70.2574Q63.432 65.0734 64.296 60.0334Q65.16 54.9934 66.12 49.9054L72.744 15.6334L80.424 15.6334L67.368 78.6094L57.768 78.6094L48.264 40.6894Q47.4 37.0414 46.68 33.5374Q45.96 30.0334 45.192 26.3854L44.808 26.3854Q44.04 30.0334 43.224 33.5374Q42.408 37.0414 41.64 40.6894L32.328 78.6094L22.824 78.6094Z" />
+        </g>
+      </g>
+    </g>
+    <path d="M5.00671e-06 157L120 96.9998L120 217L5.00671e-06 157Z" id="Triangle" fill="#BEBEBE" fill-rule="evenodd" stroke="none" filter="url(#filter_2)" />
+    <g filter="url(#filter_1)">
+      <g id="Group-3" transform="translate(426.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-7" fill="#BEBEBE" fill-rule="evenodd" stroke="none" />
+        <g id="O" transform="translate(15 15)">
+          <path d="M45 79.7614Q39.048 79.7614 34.104 77.4574Q29.16 75.1534 25.608 70.8814Q22.056 66.6094 20.088 60.5134Q18.12 54.4174 18.12 46.8334Q18.12 39.2494 20.088 33.2494Q22.056 27.2494 25.608 23.0734Q29.16 18.8974 34.104 16.6894Q39.048 14.4814 45 14.4814Q50.952 14.4814 55.896 16.7374Q60.84 18.9934 64.44 23.1694Q68.04 27.3454 70.008 33.3454Q71.976 39.3454 71.976 46.8334Q71.976 54.4174 70.008 60.5134Q68.04 66.6094 64.44 70.8814Q60.84 75.1534 55.896 77.4574Q50.952 79.7614 45 79.7614ZM45 72.7534Q49.224 72.7534 52.632 70.9294Q56.04 69.1054 58.488 65.6974Q60.936 62.2894 62.28 57.5374Q63.624 52.7854 63.624 46.8334Q63.624 40.9774 62.28 36.2734Q60.936 31.5694 58.488 28.3054Q56.04 25.0414 52.632 23.2654Q49.224 21.4894 45 21.4894Q40.776 21.4894 37.368 23.2654Q33.96 25.0414 31.512 28.3054Q29.064 31.5694 27.72 36.2734Q26.376 40.9774 26.376 46.8334Q26.376 52.7854 27.72 57.5374Q29.064 62.2894 31.512 65.6974Q33.96 69.1054 37.368 70.9294Q40.776 72.7534 45 72.7534Z" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Group-4" transform="translate(568.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-8" fill="#BEBEBE" fill-rule="evenodd" stroke="none" />
+        <g id="R" transform="translate(15 15)">
+          <path d="M26.328 78.6094L26.328 15.6334L46.008 15.6334Q50.808 15.6334 54.888 16.5454Q58.968 17.4574 61.896 19.5694Q64.824 21.6814 66.456 25.0414Q68.088 28.4014 68.088 33.2974Q68.088 40.6894 64.248 45.1054Q60.408 49.5214 53.88 51.1534L69.912 78.6094L60.888 78.6094L45.72 52.0174L34.296 52.0174L34.296 78.6094L26.328 78.6094ZM34.296 45.4894L44.856 45.4894Q52.248 45.4894 56.184 42.4654Q60.12 39.4414 60.12 33.2974Q60.12 27.0574 56.184 24.5614Q52.248 22.0654 44.856 22.0654L34.296 22.0654L34.296 45.4894Z" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Group-5" transform="translate(710.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-7" fill="#BEBEBE" fill-rule="evenodd" stroke="none" />
+        <g id="D" transform="translate(15 15)">
+          <path d="M24.12 78.6094L24.12 15.6334L39.864 15.6334Q54.456 15.6334 62.04 23.6974Q69.624 31.7614 69.624 46.8334Q69.624 54.3214 67.704 60.2254Q65.784 66.1294 62.04 70.2094Q58.296 74.2894 52.824 76.4494Q47.352 78.6094 40.248 78.6094L24.12 78.6094ZM32.088 72.0814L39.288 72.0814Q50.328 72.0814 55.848 65.4574Q61.368 58.8334 61.368 46.8334Q61.368 34.8334 55.848 28.4974Q50.328 22.1614 39.288 22.1614L32.088 22.1614L32.088 72.0814Z" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Group-6" transform="translate(852.00006 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-7" fill="#583C36" fill-rule="evenodd" stroke="none" />
+        <g id="L" fill="#FFFFFF" transform="translate(15 15)">
+          <path d="M30.312 78.6094L30.312 15.6334L38.28 15.6334L38.28 71.7934L65.832 71.7934L65.832 78.6094L30.312 78.6094Z" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Group-7" transform="translate(994 97)">
+        <path d="M0 0L120 0L120 120L0 120L0 0Z" id="Rectangle-7" fill="#583C36" fill-rule="evenodd" stroke="none" />
+        <g id="E" fill="#FFFFFF" transform="translate(15 15)">
+          <path d="M28.344 78.6094L28.344 15.6334L64.632 15.6334L64.632 22.3534L36.312 22.3534L36.312 42.1294L60.216 42.1294L60.216 48.9454L36.312 48.9454L36.312 71.7934L65.592 71.7934L65.592 78.6094L28.344 78.6094Z" />
+        </g>
+      </g>
+    </g>
+    <path d="M899 0L925 0L925 78L899 78L899 0Z" id="Rectangle-7" fill="#583C36" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+    <path d="M899 236L925 236L925 314L899 314L899 236Z" id="Rectangle-9" fill="#583C36" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+    <path d="M1136 157C1136 123.863 1162.86 97 1196 97C1229.14 97 1256 123.863 1256 157C1256 190.137 1229.14 217 1196 217C1162.86 217 1136 190.137 1136 157Z" id="Ellipse" fill="#583C36" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+  </g>
+</svg>
