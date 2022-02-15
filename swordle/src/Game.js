@@ -52,13 +52,19 @@ function KeyBoard(){
   return <div className ='keyBoard'>{keys.map((key) => <Key currentKey={key}/>)}</div>
 }
 
-function Game(props) {
+function Game() {
   return (
     <>
-    <Grid />
-    <KeyBoard />
-    <div className="vs">VERSUS<img src="swords.svg"/></div>
-    <EnemyGrid />
+    <div className='playContainer'>
+      <div className='player'>
+        <Grid />
+        <KeyBoard />
+      </div>
+      <div className="vs">VERSUS<img src="swords.svg"/></div>
+      <div className='player'>
+        <EnemyGrid />
+      </div>
+    </div>
     </>
   );
 }
