@@ -52,6 +52,10 @@ function KeyBoard(){
   return <div className ='keyBoard'>{keys.map((key) => <Key currentKey={key}/>)}</div>
 }
 
+function Versus() {
+  return <div className="vs">VERSUS<img src="swords.svg"/></div>
+}
+
 function Game() {
   return (
     <>
@@ -60,7 +64,7 @@ function Game() {
         <Grid />
         <KeyBoard />
       </div>
-      <div className="vs">VERSUS<img src="swords.svg"/></div>
+      <Versus />
       <div className='player'>
         <EnemyGrid />
       </div>
