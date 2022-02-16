@@ -27,6 +27,15 @@ body {
   color: #353535;
 }
 
+.version {
+  position: fixed;
+  bottom: 1px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  width: 100%;
+}
+
 .playContainer {
   display: flex;
   flex-direction: row;

@@ -16,6 +16,7 @@ function Main() {
             <img src="title.svg"/>
             {menus.map((menu) => <Menu option={menu} />)}
         </div>
+        <div className='version'>version 2.0</div>
     </>
   );
 }
