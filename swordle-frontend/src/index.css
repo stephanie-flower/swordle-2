@@ -51,15 +51,16 @@ body {
   align-items: center;
   font-family: 'Source Code Pro', monospace;
   font-size: 2.5rem;
+  flex: 1;
 }
 
 .cell {
   background-color: #583C36;
-  width: 40px;
-  height: 40px;
+  width: 2vw;
+  height: 2vw;
   text-align: center;
-  padding: 15px;
-  margin: 10px;
+  padding: 1vw;
+  margin: 0.5vw;
 }
 
 .gridRow {
@@ -73,7 +74,7 @@ body {
   flex-direction: column;
   width: min-content;
   height: min-content;
-  padding: 10px;
+  padding: 0.5vw;
 }
 
 .enemyGrid {
@@ -82,7 +83,7 @@ body {
   flex-direction: column;
   width: min-content;
   height: min-content;
-  padding: 10px;
+  padding: 0.5vw;
 }
 
 .vs {
