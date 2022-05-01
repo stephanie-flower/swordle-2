@@ -11,7 +11,7 @@ function Row(props) {
   var values = ['0', '1', '2', '3', '4', '5'];
   return (
     <>
-      <div className='gridRow' key={props.rowId}>{values.map((value) => <Cell value={value}/>)}</div>
+      <div className='gridRow' key={props.rowId} id={props.rowId}>{values.map((value) => <Cell value={value}/>)}</div>
     </>
   )
 }
@@ -39,17 +39,17 @@ function EnemyGrid() {
 }
 
 function Key(props) {
-  return <div key={props.currentKey}>{props.currentKey}</div>
+  return <div key={props.currentKey} onClick={() => props.populateCell(props.currentKey)}>{props.currentKey}</div>
 }
 
-function KeyBoard(){
+function KeyBoard(props){
   const keys = [
     'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
     'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', '<-',
     'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'ENTER'
   ];
 
-  return <div className ='keyBoard'>{keys.map((key) => <Key currentKey={key}/>)}</div>
+  return <div className ='keyBoard'>{keys.map((key) => <Key currentKey={key} populateCell={props.populateCell} />)}</div>
 }
 
 function Versus() {
@@ -57,12 +57,30 @@ function Versus() {
 }
 
 function Game() {
+  var currentRow = 0;
+  var currentCell = 0;
+
+  const populateCell = (letter) => {
+    var row = document.getElementById(currentRow.toString())
+    row.childNodes[currentCell].innerHTML = letter;
+    if (currentCell == 5){
+      currentRow += 1;
+      currentCell = 0;
+    } else {
+      currentCell += 1;
+    }
+  }
+
+  const deleteCell = () => {
+    console.log('go back');
+  }
+
   return (
     <>
     <div className='playContainer'>
       <div className='player'>
         <Grid />
-        <KeyBoard />
+        <KeyBoard populateCell={populateCell} />
       </div>
       <Versus />
       <div className='player'>
