@@ -87,14 +87,17 @@ function Game() {
   }
 
   const enterWord = () => {
-    var guessArray = currentGuess.toUpperCase().split('');
-    var wordArray = word.split('');
-    for (let i = 0; i<6; i++){
-      if (guessArray[i] === wordArray[i]) {
-        document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#85d479';
-        //console.log(i); //debug
-      } else if (wordArray.includes(guessArray[i])) {
-        document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#d48653';
+      var guessArray = currentGuess.toUpperCase().split('');
+      var wordArray = word.split('');
+      for (let i = 0; i<6; i++){
+        if (guessArray[i] === wordArray[i]) {
+          document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#85d479';
+          //console.log(i); //debug
+        } else if (wordArray.includes(guessArray[i])) {
+          document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#d48653';
+        }
+      if (currentGuess === word){
+        console.log('You win!'); // win condition
       }
     }
 
