@@ -61,27 +61,48 @@ function Game() {
   var currentCell = 0;
   var currentGuess = "";
 
-  const populateCell = (letter) => {
-    var row = document.getElementById(currentRow.toString())
-    var thisCell = row.childNodes[currentCell];
-    thisCell.innerHTML = letter;
-    currentGuess += letter;
+  var word = "PILLOW"; //debug, replace with fetch from word list
 
-    thisCell.style.backgroundColor = 'rgb(161, 151, 151)'
-    thisCell.style.boxShadow = '2px 2px'
-    
-    if (currentCell == 5){
-      console.log(currentGuess); // debug
-      currentRow += 1;
-      currentCell = 0;
-      currentGuess = "";
+  const populateCell = (letter) => {
+    //console.log(currentCell); // debug
+    if (letter == "<-") {
+      deleteCell();
+    } else if (letter == "ENTER") {
+      if (currentCell == 6){
+        enterWord();
+      }
     } else {
-      currentCell += 1;
+      if (currentCell < 6) {
+        var row = document.getElementById(currentRow.toString())
+        var thisCell = row.childNodes[currentCell];
+        thisCell.innerHTML = letter;
+        currentGuess += letter;
+        thisCell.style.backgroundColor = 'rgb(161, 151, 151)'
+        thisCell.style.boxShadow = '2px 2px'
+        currentCell += 1;
+      }
     }
+
   }
 
   const deleteCell = () => {
     console.log('go back');
+  }
+
+  const enterWord = () => {
+    
+    var guessArray = currentGuess.toUpperCase().split('');
+    var wordArray = word.split('');
+    for (let i = 0; i<6; i++){
+      if (guessArray[i] == wordArray[i]) {
+        document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#85d479';
+        //console.log(i); //debug
+      }
+    }
+
+    currentRow += 1;
+    currentCell = 0;
+    currentGuess = "";
   }
 
   return (
