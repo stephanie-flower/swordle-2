@@ -68,6 +68,10 @@ body {
   flex-direction: row;
 }
 
+.gridRow[id='0'] .cell {
+  box-shadow: 2px 2px;
+}
+
 .grid {
   background-color:#48261D;
   display: flex;

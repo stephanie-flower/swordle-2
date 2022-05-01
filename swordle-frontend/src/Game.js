@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { useState } from 'react';
 
 function Cell(props) {
   return <div className='cell' key={props.value}></div>
 }
 
 function Row(props) {
-  const [inactive, setActive] = useState("");
   var values = ['0', '1', '2', '3', '4', '5'];
   return (
     <>
@@ -79,7 +76,6 @@ function Game() {
         thisCell.innerHTML = letter;
         currentGuess += letter;
         thisCell.style.backgroundColor = 'rgb(161, 151, 151)'
-        thisCell.style.boxShadow = '2px 2px'
         currentCell += 1;
       }
     }
@@ -102,6 +98,9 @@ function Game() {
     }
 
     currentRow += 1;
+    for (let i=0; i<6; i++){
+      document.getElementById(currentRow.toString()).childNodes[i].style.boxShadow = '2px 2px';
+    }
     currentCell = 0;
     currentGuess = "";
   }
