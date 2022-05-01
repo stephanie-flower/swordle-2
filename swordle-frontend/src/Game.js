@@ -59,13 +59,22 @@ function Versus() {
 function Game() {
   var currentRow = 0;
   var currentCell = 0;
+  var currentGuess = "";
 
   const populateCell = (letter) => {
     var row = document.getElementById(currentRow.toString())
-    row.childNodes[currentCell].innerHTML = letter;
+    var thisCell = row.childNodes[currentCell];
+    thisCell.innerHTML = letter;
+    currentGuess += letter;
+
+    thisCell.style.backgroundColor = 'rgb(161, 151, 151)'
+    thisCell.style.boxShadow = '2px 2px'
+    
     if (currentCell == 5){
+      console.log(currentGuess); // debug
       currentRow += 1;
       currentCell = 0;
+      currentGuess = "";
     } else {
       currentCell += 1;
     }
