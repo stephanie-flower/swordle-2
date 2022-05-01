@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { useState } from 'react';
 
@@ -39,6 +39,7 @@ function EnemyGrid() {
 }
 
 function Key(props) {
+
   return <div key={props.currentKey} onClick={() => props.populateCell(props.currentKey)}>{props.currentKey}</div>
 }
 
@@ -104,6 +105,12 @@ function Game() {
     currentCell = 0;
     currentGuess = "";
   }
+
+  useEffect(() => {
+    window.addEventListener('keypress', e => {
+      populateCell(e.key);
+    });
+  }, []);
 
   return (
     <>
