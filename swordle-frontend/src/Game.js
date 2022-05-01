@@ -63,10 +63,10 @@ function Game() {
 
   const populateCell = (letter) => {
     //console.log(currentCell); // debug
-    if (letter == "<-") {
+    if (letter === "<-") {
       deleteCell();
-    } else if (letter == "ENTER") {
-      if (currentCell == 6){
+    } else if (letter === "ENTER") {
+      if (currentCell === 6){
         enterWord();
       }
     } else {
@@ -87,11 +87,10 @@ function Game() {
   }
 
   const enterWord = () => {
-    
     var guessArray = currentGuess.toUpperCase().split('');
     var wordArray = word.split('');
     for (let i = 0; i<6; i++){
-      if (guessArray[i] == wordArray[i]) {
+      if (guessArray[i] === wordArray[i]) {
         document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#85d479';
         //console.log(i); //debug
       }
@@ -106,8 +105,14 @@ function Game() {
   }
 
   useEffect(() => {
-    window.addEventListener('keypress', e => {
-      populateCell(e.key);
+    window.addEventListener('keydown', e => {
+      if (e.key === "Backspace") {
+        populateCell("<-")
+      } else if (e.key === "Enter"){
+        populateCell("ENTER");
+      } else if(e.key.charAt(0).match(/[a-zA-Z]/)){
+        populateCell(e.key);
+      }
     });
   }, []);
 
