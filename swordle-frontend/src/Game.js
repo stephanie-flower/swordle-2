@@ -93,6 +93,8 @@ function Game() {
       if (guessArray[i] === wordArray[i]) {
         document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#85d479';
         //console.log(i); //debug
+      } else if (wordArray.includes(guessArray[i])) {
+        document.getElementById(currentRow.toString()).childNodes[i].style.backgroundColor = '#d48653';
       }
     }
 
@@ -111,7 +113,7 @@ function Game() {
       } else if (e.key === "Enter"){
         populateCell("ENTER");
       } else if(e.key.charAt(0).match(/[a-zA-Z]/)){
-        populateCell(e.key);
+        populateCell(e.key.toUpperCase());
       }
     });
   }, []);
