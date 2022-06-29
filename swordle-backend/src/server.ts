@@ -5,8 +5,6 @@ import * as path from "path";
 import { Server } from "socket.io";
 
 const app = express();
-app.set("port", process.env.PORT || 3000);
-
 const server = http.createServer(app);
 const io = new Server(server);
 
